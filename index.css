@@ -1,0 +1,304 @@
+body{
+    display: block;
+    background-color: rgb(231, 226, 226);
+    font-family: sans-serif;
+}
+div{
+    display:block;
+}
+.logo {
+    position: fixed;
+    text-align: center;
+    height: 220px;
+    width: 100px;
+    padding: 10px;
+    padding-top: 20px;
+}
+.logo a{
+    text-decoration: none;
+}
+.logo a:hover{
+    background-color:black;
+    color: yellow;
+}
+.logo-block{
+    display: flex;
+    margin:auto;
+    align-items: flex-start;
+    background-color:yellow;
+    color: black;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(.55, .085, .68, .53), color 250ms cubic-bezier(.55, .085, .68, .53);
+    transition-property: background-color, color;
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53), cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transition-delay: 0s, 0s;
+}
+h3#aa{
+    margin-top: 25px;
+    margin-left: 29px;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+}
+.navbar{
+    margin: auto;
+    position: fixed;
+    padding-left: 900px;
+}
+.topnav{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    overflow: hidden;
+}
+.topnav a{
+    text-decoration: none;
+    float: right;
+    color:black;
+    align-items: center;
+    text-align: center;
+    padding: 24px 26px;
+    padding-right: 25px;
+    font-size: 30px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.topnav a:hover{
+    background-color:yellow;
+    color: rgb(85, 85, 85);
+}
+.hero{
+    padding-top: 180px;
+    padding-left: 30px;
+    display: block;
+}
+.text{
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(87, 86, 86);
+
+}
+img{
+
+    padding-left: 80px;
+    float: right;
+    padding-right: 80px;
+    opacity: 0.8;
+}
+h2{
+    padding-top: 10px;
+    color: rgb(83, 81, 81);
+    font-weight: 300;
+    line-height: 40px;
+    font-size: 30px;
+    
+}
+.topic{
+    color: rgb(87, 86, 86);
+    font-size: 40px;
+    font-weight: 600;
+    padding-left: 30px;
+    padding-top: 110px;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 20px;
+    letter-spacing: 1px;
+    justify-content: space-between;
+    color: rgb(87, 86, 86);
+}
+h1{
+    font-size: 35px;
+}
+.contents{
+    padding-top: 10px;
+    color: rgb(83, 81, 81);
+    font-weight: 300;
+    line-height: 40px;
+    font-size: 30px;
+}
+.contact{
+    padding-top: 10px;
+    padding-left: 30px;
+    letter-spacing: 1px;
+}
+.title{
+    color: rgb(87, 86, 86);
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 80px;
+}
+.container{
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 40px;
+    color: rgb(83, 81, 81);
+
+}
+.form-input{
+    margin-top: 5px;
+    max-width: 650px;
+    border-width: 1px;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    padding:8px 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+}
+.form-input.form-message{
+    min-height: 100px;
+}
+.form-submit{
+    min-height: 48px;
+    min-width: 118px;
+    margin-top: 15px;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+.form-submit:hover{
+    background-color: yellow;
+    color: black;
+    font-weight:600;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(.55, .085, .68, .53), color 250ms cubic-bezier(.55, .085, .68, .53);
+    transition-property: background-color, color;
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53), cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transition-delay: 0s, 0s;
+}
+footer{
+    text-align: center;
+    background-color: rgb(85, 83, 83);
+    color: white;
+    padding:10px;
+    margin: 20px;
+}
+.fa{
+    padding: 15px;
+    font-size: 20px;
+    width: 25px;
+    text-decoration:none;
+    text-align: center;
+    border-radius: 50%;
+}
+.fa:hover{
+    opacity: 0.7;
+}
+.fa-facebook{
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter{
+    background: #55ACEE;
+    color: white;
+}
+.fa-youtube{
+    background: red;
+    color: white;
+}
+.fa-linkedin{
+    background: rgb(105, 105, 218);
+    color: white;
+}
+.foot{
+    font-size: 20px;
+}
+.back{
+    padding-top: 20px;
+    text-align: center;
+}
+.top{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+}
+.back a:hover{
+    color:yellow;
+}
+@media only screen and (max-width:500px)
+{
+    img{
+        width:160px;
+        height: 180px;
+    }
+    body{
+        background-color:white;
+        padding-left: 10px;
+    }
+    .logo{
+        height: 110px;
+        width: 80px;
+    }
+    .logo a:hover{
+        background-color:black;
+        color: yellow;
+    }
+    .logo-block{
+        display: flex;
+        margin:auto;
+        align-items: flex-start;
+        background-color:yellow;
+        color: black;
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(.55, .085, .68, .53), color 250ms cubic-bezier(.55, .085, .68, .53);
+        transition-property: background-color, color;
+        transition-duration: 250ms, 250ms;
+        transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53), cubic-bezier(0.55, 0.085, 0.68, 0.53);
+        transition-delay: 0s, 0s;
+    }
+
+    h3#aa{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .hero{
+        padding-left: 20px;
+    }
+    .text{
+        font-size: 30px;
+    }
+    .topic{
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .contents{
+        font-size: 22px;
+    }
+    .about{
+        display: flex;
+        flex-direction: row;
+        padding-left: 20px;
+        padding-right: 5px;
+        letter-spacing: 1px;
+        justify-content: space-between;
+        color: rgb(87, 86, 86);
+        flex-wrap: wrap;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .container{
+        font-size: 25px;
+    }
+    .contact{
+        padding-left: 20px;
+    }
+}
