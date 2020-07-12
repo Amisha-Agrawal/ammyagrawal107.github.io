@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="form.css" type="text/css" media="screen">
+    <title>
+      Register
+    </title>
+</head>
+          <script>
+            function random_function()
+            {
+                var a=document.getElementById("input").value;
+                if(a==="Dazzle Word")
+                {
+                    var arr=["Nepali","Hindi","Gujrati","French","Tamil","Marathi","Assamese"];
+                }
+                else if(a==="Dazzle Word Plus")
+                {
+                    var arr=["Nepali","Hindi","Gujrati"];
+                }
+                else if(a=="Select App")
+                {
+                  alert("Select an App")
+
+                }
+             
+                var string="";
+             
+                for(i=0;i<arr.length;i++)
+                {
+                    string=string+"<option value="+arr[i]+">"+arr[i]+"</option>";
+                }
+                document.getElementById("output").innerHTML=string;
+            }
+         </script>
+<body>
+<div class="main">
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Registration Form</h1>
+    <p>Please fill in this form to register.</p>
+    <hr>
+<p id="demo"></p>
+    <label for="name"><b>Name</b></label><br>
+    <input class="form-input" type="text" id="name" name="name" placeholder="Enter Name" required><br>
+
+    <label for="email"><b>Email</b></label><br>
+    <input class="form-input" type="text" placeholder="Enter Email" name="email" id="email" required><br>
+
+    <label for="mobile"><b>Mobile(+91)</b></label><br>
+    <input class="form-input" type="text" placeholder="Enter Contact Number" name="mobile" id="mobile" required><br>
+
+    <label for="app"><b>App</b></label><br>
+        <select class="form-input" id="input" onchange="random_function()">
+            <option class="form-input">Select App</option>
+            <option class="form-input">Dazzle Word</option>
+            <option class="form-input">Dazzle Word Plus</option>
+        </select>
+
+    <br><label for="language"><b>Select a Language</b></label><br>
+      <div>
+           <select class="form-input" id="output" onchange="random_function1()">
+           <option class="form-input">Select Language</option>
+           </select>
+      </div>
+
+    <label for="coupons"><b>Number of Coupons</b></label><br>
+    <input class="form-input" type="text" placeholder="Enter number of coupons" name="coupons" id="coupons" required><br>
+
+    <label for="code"><b>Enter Referral Code</b></label><br>
+    <input class="form-input" type="text" placeholder="Enter code" name="code" id="code" required><br>
+
+    <hr>
+    <p>By registering you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <div class="center">
+        <button type="submit" class="registerbtn">Register</button>
+    </div>
+  </div>
+
+</form>
+</div>
+</body>
+</html>
